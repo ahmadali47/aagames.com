@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Snake</title>
+    <link rel="stylesheet" href="stylesnake.css">
+    <link rel="icon" href="pics/ghandle.png" type="image/png">
+</head>
+
+<body>
+
+    <nav class="fixed">
+        <ul class="navbar">
+            <div class="menu">
+
+                <div class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </div>
+
+            </div>
+            <hr>
+        </ul>
+    </nav>
+
+    <div class="sec2">
+
+        <div class="title">
+            <h2>Snake Game</h2>
+        </div>
+        <div class="gamebox">
+
+            <canvas id="gameCanvas" height="280" width="420" ></canvas>
+            
+            <div class="sap" >
+                <span id="scoreDisplay">Score: 0</span>
+                <span id="pauseDisplay">Press 'P' to Pause</span>
+            </div>
+
+            <div>
+                <p>Use 'Up, Down, Left, Right' keys to Move Or use Controller below &#127918;</p>
+            </div>
+
+            <div class="buttonsbox">
+                <div class="control-buttons">
+                    <button id="upButton">↑</button>
+                </div>
+    
+                <div class="control-buttons">
+                    <button id="leftButton">←</button>
+                    
+                    <button id="rightButton">→</button>
+                </div>
+    
+                <div class="control-buttons">
+                    <button id="downButton">↓</button>
+                </div>
+                <div class="control-buttons">
+                    <button id="pauseButton">❚❚</button>
+                </div>
+            </div>
+            
+
+            <script src="snake.js"></script>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

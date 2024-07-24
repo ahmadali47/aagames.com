@@ -1,0 +1,68 @@
+.image-container {
+    width: 280px;
+    height: 280px;
+    /* border: 1px solid #ccc; */
+    overflow: hidden;
+    position: relative;
+  }
+  .image-container img {
+    width: 80%;
+    /* height: 100%; */
+    object-fit: cover;
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .image-container img.active {
+    opacity: 1;
+  }
+
+.graphic{
+  margin-top: 2.5rem;
+  padding: 1rem 1rem;
+
+}
+
+  @media (max-width: 1150px)
+{
+    *{
+        --mainfont: 14px;
+    }
+    .image-container {
+        width: 240px;
+        height: 240px;
+      }
+
+}
+@media (max-width: 1050px)
+{
+    *{
+        --mainfont: 13px;
+    }
+    .image-container {
+        width: 200px;
+        height: 200px;
+      }
+}
+@media (max-width: 900px)
+{
+    *{
+        --mainfont: 12px;
+    }
+    .image-container {
+        width: 170px;
+        height: 170px;
+      }
+}
+@media (max-width: 700px)
+{
+    *{
+        --mainfont: 11px;
+    }
+    .image-container {
+        width: 140px;
+        height: 140px;
+      }
+}

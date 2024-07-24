@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    /* this is main color mostly */
+    --maincolor: #fffdd0;
+    --greytrans: #dedede5d;
+    --mainfont: 16px;
+    --fontstyle :'Roboto', sans-serif;
+}
+body{
+    background-color: var(--maincolor);
+
+    padding: 0px 0px;
+    margin: 0px 0px;
+
+    font-size: var(--mainfont);
+    color: black;
+    font-family:'Roboto', sans-serif;
+    font-weight:500;
+    transition-duration: 0.5s;
+}
+
+
+.desc p 
+{
+    margin: 0px 0px ;
+    padding: 0px 0px;
+}
+
+
+/* Navigation Bar */
+.fixed{
+    position: sticky;
+    left: 1px;
+    top: 1px;
+}
+.menu{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navigation{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    /* width: 50%; */
+}
+.navigation li {
+    list-style: none;
+    margin: 0rem 1rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 1rem;
+}
+.navigation li a {
+    text-decoration: none;
+    color: black;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    text-decoration: none;
+    list-style: none;
+    float: right;
+    margin-right: 1.2rem;
+}
+.social li a{
+    display: inline-block;
+    height: 1.2rem;
+    margin: 0rem 1rem;
+    margin-top: 0.2rem;
+}
+.slogo1{
+    /* border: 2px solid orange; */
+    height: 1.1rem;
+    width: 3.8rem;
+    /* margin: 0rem 0.2rem; */
+}
+.slogo2{
+    /* border: 2px solid orange; */
+    height: 1.15rem;
+    width: 1.2rem;
+    /* margin: 0rem 0.2rem; */
+}
+hr{
+    border: 1px dashed var(--greytrans);
+}
+.sec1{
+    /* border: 2px solid pink; */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+.title{
+    text-align: center;
+}
+.desc{
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+}
+
+#heading{
+    margin-left: 2rem;
+}
+
+.gamemenu{
+    display: flex;
+    /* padding: 2rem; */
+    /* border: 2px solid pink; */
+    /* width: 100%; */
+    flex-wrap: wrap;
+}
+.gamemenu li a{
+    text-decoration: none;
+    color: black;
+}
+.gamemenu li a p{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    margin-left: 1rem;
+}
+.thumbli{
+    /* border: 2px solid red; */
+    padding: 1.2rem;
+    list-style: none;
+    /* height: 50%; */
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column; 
+}
+#thumbnail{
+    width: 16.8rem;
+    /* height: 20rem; */
+    border-radius: 1.5rem;
+}
+.gamemenu li a:hover{
+    opacity: 0.8;
+}
+
+#p1{
+    position: relative;
+    border-radius: 1rem;
+    float: right;
+
+    top: 2.5rem ;
+    right: 2.5rem;
+    width: 30%;
+    
+    /* height: 25%; */
+    /* z-index: 1; */
+}
+#p2{
+    position: relative;
+    border-radius: 1rem;
+    float: right;
+
+    top: 0.5rem;
+    left: 5.5rem;
+    width: 30%;
+    
+    /* height: 100%; */
+    z-index: 1;
+}
+#p3{
+    position: relative;
+    border-radius: 1rem;
+    float: right;
+
+    top: 1rem;
+    left: 10rem;
+    width: 30%;
+
+    /* height: 100%; */
+    /* z-index: 0; */
+}
+#p4{
+    position: relative;
+    border-radius: 1rem;
+    float: right;
+
+    bottom: 5rem;
+    left: 12rem;
+    width: 25%;
+    
+    /* height: 100%; */
+    /* z-index: 0; */
+}
+.hov{
+    border: 1px solid black;
+    font-size: 2px;
+}
+
+.hov:hover{
+    transition-duration: 1s;
+    z-index: 5;
+    transform: translateY(-3px);
+}
+
+/* All that Hovers */
+
+.navigation li:hover {
+    background-color: var(--greytrans);
+    text-decoration: underline;
+    transition-duration: 0.2s;
+}
+
+.slogo1:hover{
+    transition-duration: 0.5s;
+    transform: translateY(-3px);
+}
+.slogo2:hover{
+    transition-duration: 0.5s;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 1150px)
+{
+    *{
+        --mainfont: 14px;
+    }
+
+}
+@media (max-width: 1050px)
+{
+    *{
+        --mainfont: 13px;
+    }
+
+}
+@media (max-width: 900px)
+{
+    *{
+        --mainfont: 12px;
+    }
+    /* .navbar{
+        font-size: 12px;
+    }
+    .desc{
+        font-size: 12px;
+    } */
+    /* .graphic{
+        width: 50%;   
+    } */
+}
+@media (max-width: 700px)
+{
+    *{
+        --mainfont: 11px;
+    }
+    /* .navbar{
+        font-size: 12px;
+    }
+    .desc{
+        font-size: 12px;
+    } */
+    /* .graphic{
+        width: 70%;   
+    } */
+}
